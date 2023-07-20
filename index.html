@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+	.form{
+			display: flex;
+			font-size: 25px;
+			align-items: center;
+			justify-content: center;
+			margin-top: 50px;
+		}
+	.stud{
+		margin-left: 100px;
+		width: 300px;
+		height: 250px;
+		background-color: #fff;
+		padding: 10px;
+		border-radius: 15px;
+	
+	}
+	.admin{
+		width: 300px;
+		height: 250px;
+		background-color: #fff;
+		padding: 10px;
+		border-radius: 15px;
+	}
+	
+	body{
+		background-color: yellow;
+	}
+	
+	.btn{
+		font-size: 25px;border-radius: 10px;margin: 10px;
+		cursor: pointer;
+		margin-top: 50px;
+		background-color: #fff;
+		border:1px solid;
+
+	}
+
+	</style>
+</head>
+<body>
+	<div class="form">
+<div class="admin">
+	<center><h3>Admin login</h3></center>
+<form name="frm" action="project.php" method="post">
+	<center>
+	Username <input type="text" placeholder="enter username" name="un"> <br>
+	Password <input type="text" placeholder="enter password" name="pwd"> <br>
+	<input type="submit" name="btn1" class="btn" value="login">
+</center>
+</form>
+</div>
+
+<div class="stud">
+	<center><h3>Student login</h3></center>
+<form name="frm1" action="stlog.php" method="post">
+	<center>
+	Username <input type="text" placeholder="enter username" name="usn"> <br>
+	Password <input type="text" placeholder="enter password" name="pass"> <br>
+</center>
+	<input type="submit" name="btn2" class="btn" value="login" >
+	<a href="reg.php" style="font-size: 20px;">signup</a>
+</form>
+</div>
+
+</div>
+</body>
+</html>
